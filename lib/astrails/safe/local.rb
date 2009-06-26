@@ -29,7 +29,7 @@ module Astrails
 
         puts "listing files #{base}" if $_VERBOSE
 
-        files = Dir["#{base}*"] .
+        files = Dir["#{base}.*"] .
           select{|f| File.file?(f) && File.size(f) > 0} .
           sort
 
